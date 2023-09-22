@@ -14,7 +14,7 @@ function parseMesg() {
         user_level: msg.user.level,
         user_levelImage: msg.user.badgeImageListList[0].urlListList[0],
         user_avatar: msg.user.avatarThumb.urlListList[0],
-        user_isAdmin: msg.user.user_attr.is_admin,
+        // user_isAdmin: msg.user.user_attr.is_admin,
         user_fansLevel: parseInt(msg.user.badgeImageListV2List[0].content.level),
         user_fansLightName: msg.user.badgeImageListV2List[0].content.alternativeText,
     }

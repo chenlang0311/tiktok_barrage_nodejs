@@ -120,7 +120,7 @@ const Barrage = class {
             user_nickName: user.nickname,
             user_avatar: user.avatar_thumb?.url_list[0],
             user_gender: user.gender === 1 ? '男' : '女',
-            user_isAdmin: user.user_attr.is_admin,
+            // user_isAdmin: user.user_attr?.is_admin,
             user_fansLightName: "",
             user_levelImage: ""
         }
@@ -157,7 +157,7 @@ const Barrage = class {
         result = Object.assign(result, this.getUser(msg.user))
         switch (msg.common.method) {
             case 'WebcastGiftMessage':
-                console.log(msg)
+                console.log('WebcastGiftMessage:---',msg)
                 result = Object.assign(result, {
                     // repeatCount: parseInt(),
                     msg_content: msg.common.describe,
