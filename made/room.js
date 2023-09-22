@@ -41,6 +41,7 @@ const Barrage = class {
         }, 3000)
     }
     getUser(user) {
+        console.log('getUser-2', user)
         if (!user) {
             return
         }

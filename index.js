@@ -109,6 +109,7 @@ const Barrage = class {
         this.chatObserverrom.observe(this.chatDom, { childList: true });
     }
     getUser(user) {
+        console.log('getUser-1', user)
         if (!user) {
             return
         }
